@@ -8,9 +8,9 @@ namespace UserRegistrarionProblem
         {
             Console.WriteLine("Please enter the Password : ");
             string password = Console.ReadLine();
-            bool val6 = Pattern.validatePassword2(password);
+            bool val7 = Pattern.validatePassword3(password);
 
-            if (val6)
+            if (val7)
             {
                 Console.WriteLine("Password is Correct.");
             }
@@ -19,6 +19,7 @@ namespace UserRegistrarionProblem
                 Console.WriteLine("Password is not Correct.");
 
             }
+
 
 
 
