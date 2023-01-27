@@ -9,11 +9,11 @@ namespace UserRegistrationProblem
 {
     public class Pattern
     {
-        public static string Reg_pattern7 = "^(?=.*[A-Z])(?=.*[0-9])[A-Za-z0-9]{8,}([0-9]+)?$";
+        public static string Reg_pattern8 = "^.*(?=.{8,})(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&+=]).*$";
 
-        public static bool validatePassword3(string password)
+        public static bool validatePassword4(string password)
         {
-            return Regex.IsMatch(password, Reg_pattern7);
+            return Regex.IsMatch(password, Reg_pattern8);
 
         }
 
