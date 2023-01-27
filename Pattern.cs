@@ -9,13 +9,13 @@ namespace UserRegistrationProblem
 {
     public class Pattern
     {
-        public static string Reg_pattern4 = "^[0-9]{2}\\s[0-9]{10}$";
+        public static string Reg_pattern5 = "^[a-zA-Z]{8,}([0-9]+)?$";
 
-        public static bool validateMobileNumber(string Monumber)
+        public static bool validatePassword(string password)
         {
-            return Regex.IsMatch(Monumber, Reg_pattern4);
-        }
+            return Regex.IsMatch(password, Reg_pattern5);
 
+        }
     }
 }
 

@@ -6,19 +6,20 @@ namespace UserRegistrarionProblem
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Please enter the Mobile Number : ");
-            string Monumber = Console.ReadLine();
-            bool val4 = Pattern.validateMobileNumber(Monumber);
+            Console.WriteLine("Please enter the Password : ");
+            string password = Console.ReadLine();
+            bool val5 = Pattern.validatePassword(password);
 
-            if (val4)
+            if (val5)
             {
-                Console.WriteLine("Mobile Number is Valid.");
+                Console.WriteLine("Password is Correct.");
             }
             else
             {
-                Console.WriteLine("Mobile Number is not Valid.");
+                Console.WriteLine("Password is not Correct.");
 
             }
+
 
 
 
