@@ -9,13 +9,12 @@ namespace UserRegistrationProblem
 {
     public class Pattern
     {
-        public static string REGEX_PAT = "^[A-Z]{1}[a-zA-Z0-9]{2,20}$";
-        public static bool validateLastName(string lastname)
-        {
-            return Regex.IsMatch(lastname, REGEX_PAT);
+        public static string Reg_pattern3 = "^(abc)(.[A-Za-z]+)*@(bl).(co)([.][a-z]{2,})?$";
 
+        public static bool validateEmailID(string email)
+        {
+            return Regex.IsMatch(email, Reg_pattern3);
         }
 
     }
 }
-

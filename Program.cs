@@ -6,17 +6,18 @@ namespace UserRegistrarionProblem
     {
         public static void Main(string[] args)
         {
+            Console.WriteLine("Please enter the Email  ID : ");
+            string email = Console.ReadLine();
+            bool val3 = Pattern.validateEmailID(email);
 
-            Console.WriteLine("Please enter the Last Name : ");
-            string lastname = Console.ReadLine();
-            bool val = Pattern.validateLastName(lastname);
-            if (val)
+
+            if (val3)
             {
-                Console.WriteLine("Last Name is Valid.");
+                Console.WriteLine("Email ID is Valid.");
             }
             else
             {
-                Console.WriteLine("Last Name is not Valid.");
+                Console.WriteLine("Email ID is not Valid.");
 
             }
         }
