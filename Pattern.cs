@@ -9,11 +9,13 @@ namespace UserRegistrationProblem
 {
     public class Pattern
     {
-
         public static string REGEX_PAT = "^[A-Z]{1}[a-zA-Z0-9]{2,20}$";
-        public static bool validateName(string name)
+        public static bool validateLastName(string lastname)
         {
-            return Regex.IsMatch(name, REGEX_PAT);
+            return Regex.IsMatch(lastname, REGEX_PAT);
+
         }
+
     }
 }
+
