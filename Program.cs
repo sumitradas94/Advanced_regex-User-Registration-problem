@@ -6,20 +6,22 @@ namespace UserRegistrarionProblem
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Please enter the Email  ID : ");
-            string email = Console.ReadLine();
-            bool val3 = Pattern.validateEmailID(email);
+            Console.WriteLine("Please enter the Mobile Number : ");
+            string Monumber = Console.ReadLine();
+            bool val4 = Pattern.validateMobileNumber(Monumber);
 
-
-            if (val3)
+            if (val4)
             {
-                Console.WriteLine("Email ID is Valid.");
+                Console.WriteLine("Mobile Number is Valid.");
             }
             else
             {
-                Console.WriteLine("Email ID is not Valid.");
+                Console.WriteLine("Mobile Number is not Valid.");
 
             }
+
+
+
         }
     }
 }

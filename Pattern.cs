@@ -9,12 +9,13 @@ namespace UserRegistrationProblem
 {
     public class Pattern
     {
-        public static string Reg_pattern3 = "^(abc)(.[A-Za-z]+)*@(bl).(co)([.][a-z]{2,})?$";
+        public static string Reg_pattern4 = "^[0-9]{2}\\s[0-9]{10}$";
 
-        public static bool validateEmailID(string email)
+        public static bool validateMobileNumber(string Monumber)
         {
-            return Regex.IsMatch(email, Reg_pattern3);
+            return Regex.IsMatch(Monumber, Reg_pattern4);
         }
 
     }
 }
+
